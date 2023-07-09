@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+        <title>Codigo Morse</title>
+    </head>
+    <body>
+        
+        <header class="header">
+            <p>Traductor morse</p>
+        </header>
+
+        <div class="contenedor">
+
+            <form action="" method="post">
+
+
+                <div class="flexform">
+
+                    <div class="botones">
+
+                        <div class="primer-radio">
+                            <input type="radio" name="task" id="texto" value="1" checked>
+                            <div class="label">
+                                <label for="texto">Texto a Morse</label>
+                            </div>
+                        </div>
+        
+                        <div class="primer-radio">
+                            <input type="radio" name="task" id="morse" value="2">
+                            <div class="label"> 
+                                <label for="morse">Morse a Texto</label>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                    <div class="final">
+
+                        <textarea name="string" id="" cols="30" rows="10" class="area"></textarea>
+
+                        <div class="botonform">
+                            <button type="submit" class="boton">Traducir</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- <div class="clearfix" style="clear: both;"></div> -->
+                
+            </form>
+
+            <textarea name="" id="" cols="30" rows="10" class="area area2" readonly>{{morse}}</textarea>
+
+            <!-- <div class="parrafo">
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="" class="area">{{morse}}</textarea>
+
+                <p>{{morse}}</p>
+
+            </div> -->
+                
+        </div>
+
+
+    </body>
+</html>
